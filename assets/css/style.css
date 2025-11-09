@@ -22,10 +22,12 @@ h1.titulo {
   font-size: 66px; /* tamaño original chico */
   text-transform: uppercase;
   background: linear-gradient(90deg, #924545 0%, #2C1515 100%);
-  -webkit-background-clip: text;
+  background-clip: text; /* versión estándar */
+  -webkit-background-clip: text; /* prefijo WebKit */
   -webkit-text-fill-color: transparent;
   margin: 0;
 }
+
 
 .main-content .container .row .col-12 img,
 .main-content .container .row .col-md-6 img {
@@ -88,6 +90,13 @@ footer a {
 
 footer a:hover {
   background: linear-gradient(180deg, #d24da5 0%, #6d2055 100%);
+}
+
+/* ---------- MODIFICACIÓN PARA CONTACTO.HTML ---------- */
+main h2,
+main p,
+main .cartel {
+  text-align: center;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
