@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Irish Grover', cursive;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+h1.titulo {
+  font-size: 66px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #924545 0%, #2C1515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.main-content .container .row .col-12 img,
+.main-content .container .row .col-md-6 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 300px;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+footer a {
+  display: inline-block;
+  width: 357px;
+  height: 143px;
+  background: linear-gradient(180deg, #C23693 0%, #5C1946 100%);
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  line-height: 143px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+footer a:hover {
+  background: linear-gradient(180deg, #d24da5 0%, #6d2055 100%);
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Mobile pequeño: 360px */
+@media (max-width: 360px) {
+  h1.titulo { font-size: 36px; }
+  .main-content .img-principal { height: 180px; }
+  input, textarea { width: 100%; }
+  footer a { width: 100%; font-size: 24px; line-height: 50px; height: auto; padding: 10px 0; }
+}
+
+/* Mobile mediano: 480px */
+@media (max-width: 480px) and (min-width: 361px) {
+  h1.titulo { font-size: 48px; }
+  .main-content .img-principal { height: 250px; }
+  input, textarea { width: 90%; }
+  footer a { width: 90%; font-size: 28px; line-height: 60px; height: auto; padding: 10px 0; }
+}
+
+/* Escritorio: ≥992px */
+@media (min-width: 992px) {
+  h1.titulo { font-size: 66px; }
+  .main-content .img-principal { height: 400px; }
+  input, textarea { width: 150px; }
+  footer a { width: 357px; height: 143px; font-size: 32px; line-height: 143px; }
+}
